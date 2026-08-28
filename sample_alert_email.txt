@@ -1,0 +1,23 @@
+To: manager@example.com
+From: anomaly-agent@example.com
+Subject: [CRITICAL] Ad spend +155% — 19 Aug
+
+Daily metric check — Wednesday 19 August 2026
+==============================================================
+
+WHAT HAPPENED
+Ad spend rose to $21,787 on Wednesday 19 August, against a typical $8,530 (+155%). Moving with it: traffic +142%, conversion rate -58%. Volume rose while conversion fell. The extra visitors are converting far worse than usual, which points at bot traffic, a broad-match campaign change, or a landing page mismatch rather than genuine demand. 3 of 3 changes work against the business; worth a look before the next daily review.
+
+THE NUMBERS
+ ! Ad spend                  $21,787   (typical $8,530, +155%, critical)
+ ! Traffic                    39,872   (typical 16,463, +142%, critical)
+ ! Conversion rate             1.10%   (typical 2.61%, -58%, critical)
+
+SUGGESTED CHECKS
+ - Campaign-level spend and CPC changes since the last auction shift.
+ - Traffic source breakdown — is one channel or geography responsible?
+ - Checkout funnel for errors, and any recent site deploy.
+
+--------------------------------------------------------------
+Baseline: median of the trailing 28 comparable days.
+Flagged above a modified z-score of 3.5. Automated message — reply to mute a metric.
